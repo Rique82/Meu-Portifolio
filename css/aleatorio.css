@@ -1,0 +1,106 @@
+body {
+    background: black;
+    color: lime;
+    font-family: monospace;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  h1 {
+    animation: glitch 1s infinite;
+  }
+
+  @keyframes glitch {
+    0% {
+      color: red;
+      transform: skewX(10deg);
+    }
+    25% {
+      color: lime;
+      transform: skewX(-10deg);
+    }
+    50% {
+      color: cyan;
+      transform: skewY(10deg);
+    }
+    75% {
+      color: magenta;
+      transform: skewY(-10deg);
+    }
+    100% {
+      color: yellow;
+      transform: skewX(0);
+    }
+  }
+
+  .todasimage {
+    width: 150px;
+    margin: 20px;
+    transition: transform 0.5s;
+  }
+
+  .spin {
+    animation: spin 3s infinite linear;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  img {
+    width: 250px;
+    margin-top: 20px;
+    transition: transform 0.5s ease;
+  }
+
+  #butaoloco {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    padding: 12px 20px;
+    font-size: 1rem;
+    background: lime;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  #butaoloco:hover {
+    background: magenta;
+    color: white;
+    transform: scale(1.1);
+  }
+
+  @keyframes float {
+    from {
+      top: 10%;
+      left: 10%;
+    }
+    to {
+      top: 70%;
+      left: 70%;
+    }
+  }
+
+  #butaosalva {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  #butaosalva:hover {
+    background: darkred;
+  }
